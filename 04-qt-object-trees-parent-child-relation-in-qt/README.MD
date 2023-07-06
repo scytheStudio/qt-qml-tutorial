@@ -1,25 +1,20 @@
-# Qt Network Basics and REST API Client Example - Qt QML Tutorial #14
-
-![Episode Image](episode_image.png)
+# Qt Object trees. Parent-child relation in Qt - Qt QML Tutorial #4
 
 ## Episode Purpose
-In this episode, you will explore the process of registering C++ types to QML in Qt. The episode will cover the differences between registering types and exposing objects, the benefits of separating the backend logic from the QML interface, and the various macros available for registering C++ types, such as `QML_ELEMENT`, `QML_NAMED_ELEMENT`, `QML_ANONYMOUS`, `QML_UNCREATABLE`, and `QML_FOREIGN`.
+In this episode, we will dive into the concept of object trees and the parent-child relation in Qt. We will explore why Qt introduced parenting to better manage memory and discuss why it matters in Qt applications. 
+
+This episode will highlight the parent-child relation in Qt object trees and demonstrate how it enables efficient memory management by automatically handling the destruction of child objects when their parent objects are destroyed.
 
 Episode Link: **[YT LINK]**
 
 ## Code Short Description
+Application consists of multiple windows, where each window can create and manage subwindows. Closing a parent window will automatically close all its associated subwindows.
 
-REST API client has been implemented, providing the ability to search for songs and play them directly within the app. 
+To demonstrate this behavior, there's a class named `ApplicationWindow`, based on `QObject`. Note this is not actual GUI program, but a simple representation of the window in the program's memory.
 
-To establish communication with the REST API, we used `QNetworkAccessManager` instance to handle the requests. Then a `QNetworkRequest` object was created with the necessary details, such as the API's URL, and use the `get()` or `post()` functions of `QNetworkAccessManager` to send the request. 
+Each `ApplicationWindow` object will have a title stored as a `QString`. To indicate when a window is opened or closed, there're console outputs in the constructor and destructor of the class.
 
-The response is then stored as a `QNetworkReply` pointer, and thanks to the `finished()` signal of `QNetworkAccessManager`, we can handle the response when it is ready.
-
-The responses are in JSON format, so we are also using Qt's JSON utility classes, including `QJsonDocument`, `QJsonObject`, and `QJsonArray`.
-
-To store search results, and manage requests, we created custom `AudioSearchModel` model class. This model is populated with data retrieved from the REST API, and we use it to display the search results in a `ListView` in QML. The search functionality triggered by a button click, and the selected song from the search results can be added to the playlist for playback.
-
-To search for songs, we used free to use Jamendo API, which can be found here: https://developer.jamendo.com/v3.0/docs
+In main.cpp there are many `ApplicationWindow` instances created, including one root window and two main windows. Each main window has several subwindows associated with it. Simulation of closing of windows is done using the `QTimer` class.
 
 ## About Scythe Studio
 We are a group of Qt and C++ enthusiasts whose goal is to address growing demand for cross-platform Qt development services. Thanks to our expertise in **Qt Qml development**, quality of deliveries and proven track of projects developed for companies from various industries we have been awarded the title of an official **Qt Service Partner**.

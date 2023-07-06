@@ -1,25 +1,20 @@
-# Qt Network Basics and REST API Client Example - Qt QML Tutorial #14
+# Download Qt and setup Qt Creator - Qt QML Tutorial #2
 
 ![Episode Image](episode_image.png)
 
 ## Episode Purpose
-In this episode, you will explore the process of registering C++ types to QML in Qt. The episode will cover the differences between registering types and exposing objects, the benefits of separating the backend logic from the QML interface, and the various macros available for registering C++ types, such as `QML_ELEMENT`, `QML_NAMED_ELEMENT`, `QML_ANONYMOUS`, `QML_UNCREATABLE`, and `QML_FOREIGN`.
+In this episode, we'll guide you through the process of installing Qt and setting up the Qt Creator IDE. 
+
+We'll show you how to easily install the Qt framework using the Qt Online Installer, which is a straightforward method that doesn't require a commercial Qt license. 
+
+We'll also explain the benefits of using Qt Creator for Qt QML development and demonstrate how to customize its settings to suit your preferences. Additionally, we'll provide a tour of the Qt Creator IDE, including its welcome tab, help documentation, project structure, and code editor. 
+
+By the end of this episode, you'll have Qt installed on your machine and be ready to start developing Qt applications using Qt Creator.
 
 Episode Link: **[YT LINK]**
 
 ## Code Short Description
-
-REST API client has been implemented, providing the ability to search for songs and play them directly within the app. 
-
-To establish communication with the REST API, we used `QNetworkAccessManager` instance to handle the requests. Then a `QNetworkRequest` object was created with the necessary details, such as the API's URL, and use the `get()` or `post()` functions of `QNetworkAccessManager` to send the request. 
-
-The response is then stored as a `QNetworkReply` pointer, and thanks to the `finished()` signal of `QNetworkAccessManager`, we can handle the response when it is ready.
-
-The responses are in JSON format, so we are also using Qt's JSON utility classes, including `QJsonDocument`, `QJsonObject`, and `QJsonArray`.
-
-To store search results, and manage requests, we created custom `AudioSearchModel` model class. This model is populated with data retrieved from the REST API, and we use it to display the search results in a `ListView` in QML. The search functionality triggered by a button click, and the selected song from the search results can be added to the playlist for playback.
-
-To search for songs, we used free to use Jamendo API, which can be found here: https://developer.jamendo.com/v3.0/docs
+No coding this time :)
 
 ## About Scythe Studio
 We are a group of Qt and C++ enthusiasts whose goal is to address growing demand for cross-platform Qt development services. Thanks to our expertise in **Qt Qml development**, quality of deliveries and proven track of projects developed for companies from various industries we have been awarded the title of an official **Qt Service Partner**.

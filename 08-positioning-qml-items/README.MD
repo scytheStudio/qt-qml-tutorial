@@ -1,25 +1,32 @@
-# Qt Network Basics and REST API Client Example - Qt QML Tutorial #14
+# Positioning in Qt Quick and QML - Qt QML Tutorial #8
 
 ![Episode Image](episode_image.png)
 
 ## Episode Purpose
-In this episode, you will explore the process of registering C++ types to QML in Qt. The episode will cover the differences between registering types and exposing objects, the benefits of separating the backend logic from the QML interface, and the various macros available for registering C++ types, such as `QML_ELEMENT`, `QML_NAMED_ELEMENT`, `QML_ANONYMOUS`, `QML_UNCREATABLE`, and `QML_FOREIGN`.
+In this episode, you will explore different positioning approaches in Qt Quick and QML. The concepts of x&y positioning, anchor positioning, containers (such as Row, Grid, and Column), and layouts will be explained.
+
+This episode provides practical examples to illustrate the different positioning approaches in Qt Quick and QML, helping you understand when and where each technique is most appropriate.
 
 Episode Link: **[YT LINK]**
 
 ## Code Short Description
+In this coding example, an application has been created to simulate a house wall that you want to decorate. The wall is represented as a plain, yellowish surface.
 
-REST API client has been implemented, providing the ability to search for songs and play them directly within the app. 
+To decorate the wall, paintings in the form of plain rectangles have been hung. Each painting is positioned using a different approach to showcase the various techniques.
 
-To establish communication with the REST API, we used `QNetworkAccessManager` instance to handle the requests. Then a `QNetworkRequest` object was created with the necessary details, such as the API's URL, and use the `get()` or `post()` functions of `QNetworkAccessManager` to send the request. 
+A large `GridLayout` with 2 columns and 2 rows serves as the main layout. The grid layout utilizes anchors to fill the window. The paintings are positioned as follows:
 
-The response is then stored as a `QNetworkReply` pointer, and thanks to the `finished()` signal of `QNetworkAccessManager`, we can handle the response when it is ready.
+- In the top-left cell of the grid, a container item has been placed, and within that container, the picture is positioned using `x` and `y` properties.
 
-The responses are in JSON format, so we are also using Qt's JSON utility classes, including `QJsonDocument`, `QJsonObject`, and `QJsonArray`.
+- In the top-right cell, another container has been created, and within that container, the picture is positioned using anchors.
 
-To store search results, and manage requests, we created custom `AudioSearchModel` model class. This model is populated with data retrieved from the REST API, and we use it to display the search results in a `ListView` in QML. The search functionality triggered by a button click, and the selected song from the search results can be added to the playlist for playback.
+- In the bottom-left cell, the `Flow` layout is used to place 5 identical images.
 
-To search for songs, we used free to use Jamendo API, which can be found here: https://developer.jamendo.com/v3.0/docs
+- Finally, in the bottom-right cell, another `GridLayout` is nested to hang 3 more images.
+
+Each cell has been encapsulated in empty Item, so other positioners won't break whole wall.
+
+The use of a `Repeater` item allows for the creation of multiple instances of the same-looking element, in this case, paintings.
 
 ## About Scythe Studio
 We are a group of Qt and C++ enthusiasts whose goal is to address growing demand for cross-platform Qt development services. Thanks to our expertise in **Qt Qml development**, quality of deliveries and proven track of projects developed for companies from various industries we have been awarded the title of an official **Qt Service Partner**.

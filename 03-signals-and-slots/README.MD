@@ -1,25 +1,32 @@
-# Qt Network Basics and REST API Client Example - Qt QML Tutorial #14
+# Signals and slots in Qt - Qt QML Tutorial #3
 
 ![Episode Image](episode_image.png)
 
 ## Episode Purpose
-In this episode, you will explore the process of registering C++ types to QML in Qt. The episode will cover the differences between registering types and exposing objects, the benefits of separating the backend logic from the QML interface, and the various macros available for registering C++ types, such as `QML_ELEMENT`, `QML_NAMED_ELEMENT`, `QML_ANONYMOUS`, `QML_UNCREATABLE`, and `QML_FOREIGN`.
+In this episode, we will explore the concept of signals and slots in Qt. We will understand why Qt introduced signals as an alternative to callbacks, especially in GUI development. We will learn how signals work and explore the signature of the `QObject::connect()` function.
+
+This episode will demonstrate the usage and interaction of signals and slots in Qt, highlighting their importance in event-driven programming.
 
 Episode Link: **[YT LINK]**
 
 ## Code Short Description
+The code consists of three classes: `UserInteractor`, `Firefox`, and `InternetExplorer`.
 
-REST API client has been implemented, providing the ability to search for songs and play them directly within the app. 
+- `UserInteractor`: This class prompts the user to input a phrase to search for. It emits a signal `phraseTyped(const QString &phrase)` with the entered phrase as a parameter.
 
-To establish communication with the REST API, we used `QNetworkAccessManager` instance to handle the requests. Then a `QNetworkRequest` object was created with the necessary details, such as the API's URL, and use the `get()` or `post()` functions of `QNetworkAccessManager` to send the request. 
+- `Firefox`: This class has a slot function named `browse()`.
 
-The response is then stored as a `QNetworkReply` pointer, and thanks to the `finished()` signal of `QNetworkAccessManager`, we can handle the response when it is ready.
+- `InternetExplorer`: This class has a signal named `browseRequested()` and a slot named `browse()`.
 
-The responses are in JSON format, so we are also using Qt's JSON utility classes, including `QJsonDocument`, `QJsonObject`, and `QJsonArray`.
+We will also use the `QTimer` class provided by the Qt framework to implement a delay. `QTimer` allows us to create timer-like actions.
 
-To store search results, and manage requests, we created custom `AudioSearchModel` model class. This model is populated with data retrieved from the REST API, and we use it to display the search results in a `ListView` in QML. The search functionality triggered by a button click, and the selected song from the search results can be added to the playlist for playback.
+The communication between objects of these classes:
 
-To search for songs, we used free to use Jamendo API, which can be found here: https://developer.jamendo.com/v3.0/docs
+1. When the `phraseTyped` signal is emitted by `UserInteractor`, it will trigger both the `browse()` slot in `Firefox` and the `browseRequested()` signal in `InternetExplorer`.
+
+2. The emitted `browseRequested()` signal will start the timer.
+
+3. After 10 seconds, the timer will emit a `timeout()` signal, which is connected to the `browse()` function in `InternetExplorer`.
 
 ## About Scythe Studio
 We are a group of Qt and C++ enthusiasts whose goal is to address growing demand for cross-platform Qt development services. Thanks to our expertise in **Qt Qml development**, quality of deliveries and proven track of projects developed for companies from various industries we have been awarded the title of an official **Qt Service Partner**.

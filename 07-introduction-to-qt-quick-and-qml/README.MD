@@ -1,25 +1,22 @@
-# Qt Network Basics and REST API Client Example - Qt QML Tutorial #14
+# Introduction to Qt Quick and QML - Qt QML Tutorial #7
 
 ![Episode Image](episode_image.png)
 
 ## Episode Purpose
-In this episode, you will explore the process of registering C++ types to QML in Qt. The episode will cover the differences between registering types and exposing objects, the benefits of separating the backend logic from the QML interface, and the various macros available for registering C++ types, such as `QML_ELEMENT`, `QML_NAMED_ELEMENT`, `QML_ANONYMOUS`, `QML_UNCREATABLE`, and `QML_FOREIGN`.
+In this episode you will be introduced to Qt Quick and QML world. We will explain what QML is and its role in Qt development. The episode will cover the basic syntax of QML, showcase basic UI elements, and explain property bindings. Additionally, we will demonstrate how to use signals and slots in QML, utilizing both handlers and the `Connections` type. Finally, you will explore how to write JavaScript functions within QML.
 
 Episode Link: **[YT LINK]**
 
 ## Code Short Description
+In this coding example, there's a simple QML application with two buttons. The first button prints a message to the console output when clicked, while the second button closes the entire application.
 
-REST API client has been implemented, providing the ability to search for songs and play them directly within the app. 
+To gain a better understanding of QML's workings, we used a custom button instead of using the built-in QML types. However, note that it is generally recommended to use existing QML types for buttons in real-world scenarios. For the sake of simplicity, we created a basic rectangular button that can change color based on user interactions.
 
-To establish communication with the REST API, we used `QNetworkAccessManager` instance to handle the requests. Then a `QNetworkRequest` object was created with the necessary details, such as the API's URL, and use the `get()` or `post()` functions of `QNetworkAccessManager` to send the request. 
+The button consists of a plain rectangle, a `Text` element, and a `MouseArea` element for handling mouse events. Property bindings were utilized to change the button's color when the mouse hovers over it or when it is pressed.
 
-The response is then stored as a `QNetworkReply` pointer, and thanks to the `finished()` signal of `QNetworkAccessManager`, we can handle the response when it is ready.
+Furthermore, there's a slot that will be invoked when the button is pressed, allowing us to perform custom actions.
 
-The responses are in JSON format, so we are also using Qt's JSON utility classes, including `QJsonDocument`, `QJsonObject`, and `QJsonArray`.
-
-To store search results, and manage requests, we created custom `AudioSearchModel` model class. This model is populated with data retrieved from the REST API, and we use it to display the search results in a `ListView` in QML. The search functionality triggered by a button click, and the selected song from the search results can be added to the playlist for playback.
-
-To search for songs, we used free to use Jamendo API, which can be found here: https://developer.jamendo.com/v3.0/docs
+To create multiple buttons with different functionalities, we created copies of the button item and defined their respective slots. In future episodes, you will explore how to create such buttons as separate types.
 
 ## About Scythe Studio
 We are a group of Qt and C++ enthusiasts whose goal is to address growing demand for cross-platform Qt development services. Thanks to our expertise in **Qt Qml development**, quality of deliveries and proven track of projects developed for companies from various industries we have been awarded the title of an official **Qt Service Partner**.
