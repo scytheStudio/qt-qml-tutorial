@@ -13,7 +13,7 @@ We will determine if Qt is right choice, checking following key factors:
 5. Industry-specific Considerations
 6. Business Factors
 
-Episode Link: **[YT LINK]**
+[Why Qt? Should you choose Qt for your project? - Qt QML Tutorial #1 - Watch on YouTube](https://www.youtube.com/watch?v=ApbBpDH4f3c&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=2)
 
 ## Code Short Description
 No coding this time :)

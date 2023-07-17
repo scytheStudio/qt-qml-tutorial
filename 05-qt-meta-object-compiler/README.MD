@@ -12,7 +12,7 @@ We'll explore a technical example of declaring a property using the UserInteract
 
 By understanding the role of MOC and properties in Qt, you'll have a deeper grasp of the underlying mechanisms that make Qt powerful and flexible for application development. 
 
-Episode Link: **[YT LINK]**
+[Qt Meta-Object Compiler (moc) and magic behind QObject - Qt QML Tutorial #5  - Watch on YouTube](https://www.youtube.com/watch?v=yBsLC_d4jqc&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=6)
 
 ## Code Short Description
 No coding this time :)

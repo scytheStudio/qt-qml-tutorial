@@ -9,7 +9,7 @@ We'll discuss the key differences between these approaches, their strengths, and
 
 We'll discuss the pros and cons of each approach, including their suitability for different platforms, ease of customization, and performance considerations. By the end of this episode, you'll have a clear understanding of when to choose Qt Widgets or Qt Quick for your GUI development projects.
 
-Episode Link: **[YT LINK]**
+[Qt Quick vs Qt Widgets. Qt GUI development - Qt QML Tutorial #6 - Watch on YouTube](https://www.youtube.com/watch?v=xR110fEWsuw&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=7)
 
 ## Code Short Description
 No coding this time :)

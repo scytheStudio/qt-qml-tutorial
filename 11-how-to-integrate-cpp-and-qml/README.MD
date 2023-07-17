@@ -5,7 +5,7 @@
 ## Episode Purpose
 In this episode, you will learn how to expose objects from C++ to QML in Qt. The episode will cover various techniques, including the use of `setContextProperty`, `QML_SINGLETON`, and `qmlRegisterSingletonInstance`. We will explain the differences between these approaches and guide you in choosing the appropriate method for your application. Additionally, you will explore the usage of exposed C++ objects in QML.
 
-Episode Link: **[YT LINK]**
+[How to integrate C++ and QML? Exposing C++ objects to QML - Qt QML Tutorial #11 - Watch on YouTube](https://www.youtube.com/watch?v=y9ElIMlJnmE&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=12)
 
 ## Code Short Description
 

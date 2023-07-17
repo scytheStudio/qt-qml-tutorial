@@ -1,4 +1,4 @@
-# Qt Network Basics and REST API Client Example - Qt QML Tutorial #14
+# How to learn Qt QML development? - Qt QML Tutorial #15
 
 ![Episode Image](episode_image.png)
 
@@ -7,7 +7,7 @@ In this episode, we'll provide you with a comprehensive list of resources and ti
 
 Learning the Qt Creator IDE is another important aspect we'll address. We'll introduce a Qt Creator Cheat Sheet with shortcuts and tips that can enhance your productivity and efficiency in the IDE.
 
-Episode Link: **[YT LINK]**
+[How to learn Qt QML development? - Qt QML Tutorial #15 - Watch on YouTube](https://www.youtube.com/watch?v=Is19MrmDuRs&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=16)
 
 ## Code Short Description
 

@@ -10,7 +10,7 @@ This tutorial series is designed to provide a solid foundation in understanding 
 
 ## Tutorial Playlist
 
-To follow along with the tutorial series, you can access the complete playlist on our YouTube channel. Here's the [Tutorial Playlist Link](TUTORIAL PLAYLIST LINK) for your convenience.
+To follow along with the tutorial series, you can access the complete playlist on our YouTube channel. Here's the [Tutorial Playlist Link](https://www.youtube.com/playlist?list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI) for your convenience.
 
 ## Repository Structure
 

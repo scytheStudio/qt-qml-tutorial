@@ -11,7 +11,7 @@ We'll also explain the benefits of using Qt Creator for Qt QML development and d
 
 By the end of this episode, you'll have Qt installed on your machine and be ready to start developing Qt applications using Qt Creator.
 
-Episode Link: **[YT LINK]**
+[Download Qt and setup Qt Creator - Qt QML Tutorial #2 - Watch on YouTube](https://www.youtube.com/watch?v=wR_jXBUW11g&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=3)
 
 ## Code Short Description
 No coding this time :)

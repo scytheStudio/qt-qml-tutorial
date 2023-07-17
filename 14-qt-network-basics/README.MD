@@ -5,7 +5,7 @@
 ## Episode Purpose
 In this episode, you will explore the process of registering C++ types to QML in Qt. The episode will cover the differences between registering types and exposing objects, the benefits of separating the backend logic from the QML interface, and the various macros available for registering C++ types, such as `QML_ELEMENT`, `QML_NAMED_ELEMENT`, `QML_ANONYMOUS`, `QML_UNCREATABLE`, and `QML_FOREIGN`.
 
-Episode Link: **[YT LINK]**
+[Qt Network Basics and REST API Client Example - Qt QML Tutorial #14 - Watch on YouTube](https://www.youtube.com/watch?v=wzqd9Nt6ohM&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=15)
 
 ## Code Short Description
 

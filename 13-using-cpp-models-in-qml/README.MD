@@ -6,8 +6,7 @@
 
 In this episode, you will explore the Model-View pattern system in Qt and specifically focus on QAbstractItemModel. The episode will explain the concept of the Model-View pattern, highlighting the separation of data and presentation. We will discuss the benefits of using QAbstractItemModel to expose lists of data from C++ to QML, allowing for dynamic updates and synchronization between the UI and the data source.
 
-
-Episode Link: **[YT LINK]**
+[Using C++ Models in QML - Qt QML Tutorial #13 - Watch on YouTube](https://www.youtube.com/watch?v=xVZx57kxgyg&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=14)
 
 ## Code Short Description
 

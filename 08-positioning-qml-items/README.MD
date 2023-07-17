@@ -7,7 +7,7 @@ In this episode, you will explore different positioning approaches in Qt Quick a
 
 This episode provides practical examples to illustrate the different positioning approaches in Qt Quick and QML, helping you understand when and where each technique is most appropriate.
 
-Episode Link: **[YT LINK]**
+[Positioning in Qt Quick and QML - Qt QML Tutorial #8 - Watch on YouTube](https://www.youtube.com/watch?v=bv3XdeM3a5s&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=9)
 
 ## Code Short Description
 In this coding example, an application has been created to simulate a house wall that you want to decorate. The wall is represented as a plain, yellowish surface.

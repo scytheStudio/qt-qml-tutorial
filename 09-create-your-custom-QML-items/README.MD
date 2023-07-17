@@ -5,7 +5,7 @@
 ## Episode Purpose
 In this episode, you will learn how to create new QML items. The episode will showcase the process of creating additional QML items using the `qt_add_qml_module` directive. This will allow you to expand the functionality of your QML application.
 
-Episode Link: **[YT LINK]**
+[Creating QML Items - Qt QML Tutorial #9 - Watch on YouTube](https://www.youtube.com/watch?v=RHs6Kei-KL8&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=10)
 
 ## Code Short Description
 

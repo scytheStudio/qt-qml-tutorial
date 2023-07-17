@@ -5,7 +5,7 @@ In this episode, we will dive into the concept of object trees and the parent-ch
 
 This episode will highlight the parent-child relation in Qt object trees and demonstrate how it enables efficient memory management by automatically handling the destruction of child objects when their parent objects are destroyed.
 
-Episode Link: **[YT LINK]**
+[Qt Object trees. Parent-child relation in Qt - Qt QML Tutorial #4 - Watch on YouTube](https://www.youtube.com/watch?v=t7GMM-wp1ec&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=5)
 
 ## Code Short Description
 Application consists of multiple windows, where each window can create and manage subwindows. Closing a parent window will automatically close all its associated subwindows.

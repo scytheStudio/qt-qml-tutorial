@@ -13,7 +13,7 @@ Throughout the series, we'll cover essential concepts like communication mechani
 
 As we conclude the series, we'll provide guidance on the path forward, helping you continue your growth and learning in Qt QML development. We'll point you to additional resources and show you how to make the most of them.
 
-Episode Link: **[YT LINK]**
+[Learn Qt and QML! - Qt QML Tutorial #0 - Watch on YouTube](https://www.youtube.com/watch?v=RWd-zjclFB0&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=1)
 
 ## Code Short Description
 No coding this time :)

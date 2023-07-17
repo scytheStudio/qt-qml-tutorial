@@ -5,7 +5,7 @@
 ## Episode Purpose
 In this episode you will be introduced to Qt Quick and QML world. We will explain what QML is and its role in Qt development. The episode will cover the basic syntax of QML, showcase basic UI elements, and explain property bindings. Additionally, we will demonstrate how to use signals and slots in QML, utilizing both handlers and the `Connections` type. Finally, you will explore how to write JavaScript functions within QML.
 
-Episode Link: **[YT LINK]**
+[Introduction to Qt Quick and QML - Qt QML Tutorial #7 - Watch on YouTube](https://www.youtube.com/watch?v=VPW3y3RVlLw&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=8)
 
 ## Code Short Description
 In this coding example, there's a simple QML application with two buttons. The first button prints a message to the console output when clicked, while the second button closes the entire application.

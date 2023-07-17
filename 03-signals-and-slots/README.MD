@@ -7,7 +7,7 @@ In this episode, we will explore the concept of signals and slots in Qt. We will
 
 This episode will demonstrate the usage and interaction of signals and slots in Qt, highlighting their importance in event-driven programming.
 
-Episode Link: **[YT LINK]**
+[Signals and slots in Qt - Qt QML Tutorial #3 - Watch on YouTube](https://www.youtube.com/watch?v=_DjKew8IHJA&list=PLP7UmEJ9z4mpi0JXcPS0VRK-7eFAfROZI&index=4)
 
 ## Code Short Description
 The code consists of three classes: `UserInteractor`, `Firefox`, and `InternetExplorer`.
