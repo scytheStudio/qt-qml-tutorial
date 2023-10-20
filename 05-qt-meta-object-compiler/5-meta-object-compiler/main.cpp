@@ -3,6 +3,7 @@
 
 #include "Firefox.h"
 #include "InternetExplorer.h"
+#include "qvariant.h"
 
 int main(int argc, char *argv[])
 {
@@ -12,8 +13,13 @@ int main(int argc, char *argv[])
     Firefox firefox;
     InternetExplorer internetExplorer;
 
-    QObject::connect(&interactor, &UserInteractor::phraseTyped, &firefox, &Firefox::browse);
-    QObject::connect(&interactor, &UserInteractor::phraseTyped, &internetExplorer, &InternetExplorer::browseRequested);
+    firefox.setProperty("version", "2.12.12");
+
+    QObject::connect(&interactor, &UserInteractor::phraseTyped, &a, [&]() {
+        QObject *obj = &interactor;
+        qDebug() << obj->property("phrase");
+        qDebug() << firefox.property("version");
+    });
 
     interactor.getInput();
 

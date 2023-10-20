@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(3-signals-and-slots-in-qt LANGUAGES CXX)
+project(5-meta-object-compiler LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
