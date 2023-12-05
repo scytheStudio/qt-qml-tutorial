@@ -110,7 +110,7 @@ void AudioSearchModel::parseData()
 
         endResetModel();
     } else if (m_reply->error() != QNetworkReply::OperationCanceledError) {
-        qCritical() << "Reply failed, eror:" << m_reply->errorString();
+        qCritical() << "Reply failed, error:" << m_reply->errorString();
     }
 
     setIsSearching(false);
